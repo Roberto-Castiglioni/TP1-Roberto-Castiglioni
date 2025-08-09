@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dale vida a tu internet con una página web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles.css">
 
 </head>
 <body>
     <header>
         <div class="header-content-left">
-<h1>
-    <a href="index.html" class="logo-link">
-        <picture>
-            <source srcset="https://culturaai.com/wp-content/uploads/2024/10/Hostinger-768x432.jpg" type="image/jpeg">
-            <img src="images/logo-hostinger.jpg" alt="Hostinger" class="logo-img">
-        </picture>
-    </a>
-</h1>
+            <h1>
+                <a href="index.html" class="logo-link logo-container">
+                    <picture>
+                        <source srcset="https://culturaai.com/wp-content/uploads/2024/10/Hostinger-768x432.jpg" type="image/jpeg">
+                        <img src="images/logo-hostinger.jpg" alt="Hostinger" class="logo-img">
+                    </picture>
+                </a>
+            </h1>
             <nav>
                 <a href="#">Precios</a>
+                <!--agregue una V solo para ocupar visualmente el espacio-->
                 <a href="#">Servicios <b>∨</b></a>
                 <a href="#">Explorar <b>∨</b></a>
                 <a href="#">Soporte <b>∨</b></a>
@@ -32,39 +34,272 @@
                 <span class="fi fi-ar me-2"></span>Español
             </button>
             <button class="btn-account">Mi cuenta</button>
+                        <button class="menu-btn"><i class="bi bi-list"></i></button>
         </div>
     </header>
-    <section class="section-servicies">
-        <div class="section-servicies-header">        
-            <h2>Rapidez. Confiabilidad. Eficiencia.</h2>
-            <span>El más alto rendimiento y la mejor experiencia de usuario para tu audiencia.</span>
+
+    <main>
+        <section class="section-servicies">
+            <div class="section-servicies-header">        
+                <h2>Rapidez. Confiabilidad. Eficiencia.</h2>
+                <span>El más alto rendimiento y la mejor experiencia de usuario para tu audiencia.</span>
+            </div>
+            <div class="div-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h3>Centros de datos locales.
+                    <br>En todo el mundo.</h3>
+                    <p>Tu sitio se va a conectar automáticamente al centro de datos más cercano en nuestra red global para mayor eficiencia.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h3>Velocidad máxima.
+                    <br>Sea cual sea el tráfico.</h3>
+                    <p>Menos tiempo de respuesta y carga rápida de páginas incluso durante los picos de tráfico.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="bi bi-arrow-clockwise"></i>
+                    </div>
+                    <h3>En vivo.
+                    <br>24/7.</h3>
+                    <p>Gracias a nuestra garantía de uptime del 99,9%, tu sitio web va a estar trabajando día y noche.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-reviews">
+        <div class="section-reviews-header">
+            <h2>Más de 4 millones de dueños de webs en todo el mundo confían en nosotros</h2>
         </div>
-        <div class="div-cards">
-            <div class="card">
-                <div class="card-icon">
-                    <i class="bi bi-globe"></i>
+        <a href="">
+        <img src="./images/nav1.jpg" alt="" class="review-nav-img">
+        </a>
+            <div class="section-reviews-body">
+                <div class="review1">
+                    <div class="person">
+                    <i class="bi bi-person-circle"></i>
+                        <div class="person-text">
+                            <h3>Charlie Low</h3>
+                            <span>Co-fundadora de Nohma</span>
+                        </div>
+                    </div>
+                    <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                    <p class="review-text">Desde que trabajamos con Hostinger, todo ha sido fantástico. Nunca hemos tenido ningún problema y, si alguna vez tuvimos alguna pregunta, su servicio de atención al cliente es increíble.</p>
+                    <a href="https://www.hostinger.com/es/tutoriales/historia-de-climbingvan-en-hostinger" class="review-link-a" target="_blank">Leer la historia completa&nbsp; ></a>
                 </div>
-                <h3>Centros de datos locales.
-                <br>En todo el mundo.</h3>
-                <p>Tu sitio se va a conectar automáticamente al centro de datos más cercano en nuestra red global para mayor eficiencia.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">
-                    <i class="bi bi-graph-up-arrow"></i>
+
+                <div class="review1 review-none">
+                    <div class="person">
+                    <i class="bi bi-person-circle"></i>
+                        <div class="person-text">
+                            <h3>Jack Biesw</h3>
+                            <span>Director creativo</span>
+                        </div>
+                    </div>
+                    <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                    <p class="review-text">El equipo de Éxito del cliente de Hostinger supera las expectativas al entender mi problema.</p>
+                    <a href="https://www.hostinger.com/es/tutoriales/historia-de-jack-bies-en-hostinger" class="review-link-a" target="_blank">Leer la historia completa&nbsp; ></a>
                 </div>
-                <h3>Velocidad máxima.
-                <br>Sea cual sea el tráfico.</h3>
-                <p>Menos tiempo de respuesta y carga rápida de páginas incluso durante los picos de tráfico.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">
-                    <i class="bi bi-arrow-clockwise"></i>
+
+                <div class="review1 review-none">
+                    <div class="person">
+                    <i class="bi bi-person-circle"></i>
+                        <div class="person-text">
+                            <h3>Jhon Ortega</h3>
+                            <span>Emprendedor</span>
+                        </div>
+                    </div>
+                    <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                    <p class="review-text">Estaba buscando una empresa de hosting que fuera intuitiva para principiantes y bien configurada para un buen rendimiento.</p>
+                    <a href="https://www.hostinger.com/es/tutoriales/historia-de-jhon-ortega-en-hostinger" class="review-link-a" target="_blank">Leer la historia completa&nbsp; ></a>
                 </div>
-                <h3>En vivo.
-                <br>24/7.</h3>
-                <p>Gracias a nuestra garantía de uptime del 99,9%, tu sitio web va a estar trabajando día y noche.</p>
             </div>
-        </div>
-    </section>
+            <button class="review-link"
+                    onclick="window.open('https://www.hostinger.com/es/tutoriales/historias-de-clientes', '_blank')">
+                    Ver más historias de clientes
+            </button>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section class="footer-section">
+            <div class="footer-logo-media-section">
+                <div class="footer-logo">
+                    <h1>
+                        <a href="index.html" class="logo-link">
+                            <picture>
+                                <source srcset="https://culturaai.com/wp-content/uploads/2024/10/Hostinger-768x432.jpg" type="image/jpeg">
+                                <img src="images/logo-hostinger.jpg" alt="Hostinger" class="logo-img">
+                            </picture>
+                        </a>
+                    </h1>
+                </div>
+                <div class="footer-socialmedia">
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="youtube-icon">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-payment">
+                <div class="footer-payment-icons">
+                    <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/eea0da37-b667-4d93-3e73-ce63b3b81400/public" alt="Visa" class="payment-icon">
+                    <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/8c07a3ee-6954-4b35-f511-ae9011dbfd00/public" alt="Mastercard" class="payment-icon">
+                    <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/88baade4-7e9d-4a22-1353-63b45203a700/public" alt="Amex" class="payment-icon">
+                    <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/eaeabe9a-6e9d-4f74-4411-be32b5a81700/public" alt="Discover" class="payment-icon">
+                    <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/1c653909-0d6b-4f97-f1ee-00d2d6581000/public" alt="Bitcoin" class="payment-icon">
+                    <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/300cf612-fc30-41c8-da08-1438879d5d00/public" alt="Cordial" class="payment-icon">
+                    <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/9c05bbf9-f455-41df-4b1e-070198de2500/public" alt="Cordobesa" class="payment-icon">
+                    <a href="https://www.hostinger.com/ar/pagos" class="y-mas">y más</a>
+                </div>
+                <div class="footer-politicas">
+                    <a href="https://www.hostinger.com/ar/politica-de-privacidad" class="footer-link">Política de privacidad</a>
+                    <a href="https://www.hostinger.com/ar/politica-de-cookies" class="footer-link">Política de reembolso</a>
+                    <a href="https://www.hostinger.com/ar/terminos-de-servicio" class="footer-link">Términos de servicio</a>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="copyright-left">
+                    © 2004-2025 Hostinger – Subí tu proyecto a internet, hacelo crecer y superá tus metas gracias al poder de la inteligencia artificial.
+                </div>
+
+                <div class="copyright-right">
+                    Los precios se muestran sin IVA
+                </div>
+            </div>
+        </section>
+<!-- 1024 ---------------------------------------------------------------------------------------------------------------------------1024 -->
+        <section class="footer-section1024">
+            <div class="footer-logo-media-section1024">
+                <div class="footer-logo1024">
+                    <h1>
+                        <a href="index.html" class="logo-link">
+                            <picture>
+                                <source srcset="https://culturaai.com/wp-content/uploads/2024/10/Hostinger-768x432.jpg" type="image/jpeg">
+                                <img src="images/logo-hostinger.jpg" alt="Hostinger" class="logo-img">
+                            </picture>
+                        </a>
+                    </h1>
+                </div>
+                <div class="footer-socialmedia1024">
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="youtube-icon1024">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-politicas1024">
+                <a href="https://www.hostinger.com/ar/politica-de-privacidad" class="footer-link">Política de privacidad</a>
+                <a href="https://www.hostinger.com/ar/politica-de-cookies" class="footer-link">Política de reembolso</a>
+                <a href="https://www.hostinger.com/ar/terminos-de-servicio" class="footer-link">Términos de servicio</a>
+            </div>
+            <div class="footer-payment-icons">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/eea0da37-b667-4d93-3e73-ce63b3b81400/public" alt="Visa" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/8c07a3ee-6954-4b35-f511-ae9011dbfd00/public" alt="Mastercard" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/88baade4-7e9d-4a22-1353-63b45203a700/public" alt="Amex" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/eaeabe9a-6e9d-4f74-4411-be32b5a81700/public" alt="Discover" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/1c653909-0d6b-4f97-f1ee-00d2d6581000/public" alt="Bitcoin" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/300cf612-fc30-41c8-da08-1438879d5d00/public" alt="Cordial" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/9c05bbf9-f455-41df-4b1e-070198de2500/public" alt="Cordobesa" class="payment-icon">
+                <a href="https://www.hostinger.com/ar/pagos" class="y-mas">y más</a>
+            </div>
+            <div class="footer-copyright1024">
+                <div class="copyright-left1024">
+                    © 2004-2025 Hostinger – Subí tu proyecto a internet, hacelo crecer y superá tus metas gracias al poder de la inteligencia artificial.
+                </div>
+
+                <div class="copyright-right1024">
+                    Los precios se muestran sin IVA
+                </div>
+            </div>
+        </section>
+
+<!-- 767 ---------------------------------------------------------------------------------------------------------------------------767 -->
+        <section class="footer-section767">
+            <div class="footer-logo-media-section767">
+                <div class="footer-logo1024">
+                    <h1>
+                        <a href="index.html" class="logo-link">
+                            <picture>
+                                <source srcset="https://culturaai.com/wp-content/uploads/2024/10/Hostinger-768x432.jpg" type="image/jpeg">
+                                <img src="images/logo-hostinger.jpg" alt="Hostinger" class="logo-img">
+                            </picture>
+                        </a>
+                    </h1>
+                </div>
+                <div class="footer-socialmedia767">
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="youtube-icon1024">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-politicas767">
+                <a href="https://www.hostinger.com/ar/politica-de-privacidad" class="footer-link">Política de privacidad</a>
+                <a href="https://www.hostinger.com/ar/politica-de-cookies" class="footer-link">Política de reembolso</a>
+                <a href="https://www.hostinger.com/ar/terminos-de-servicio" class="footer-link">Términos de servicio</a>
+            </div>
+            <div class="footer-payment-icons">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/eea0da37-b667-4d93-3e73-ce63b3b81400/public" alt="Visa" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/8c07a3ee-6954-4b35-f511-ae9011dbfd00/public" alt="Mastercard" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/88baade4-7e9d-4a22-1353-63b45203a700/public" alt="Amex" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/eaeabe9a-6e9d-4f74-4411-be32b5a81700/public" alt="Discover" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/1c653909-0d6b-4f97-f1ee-00d2d6581000/public" alt="Bitcoin" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/300cf612-fc30-41c8-da08-1438879d5d00/public" alt="Cordial" class="payment-icon">
+                <img src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/9c05bbf9-f455-41df-4b1e-070198de2500/public" alt="Cordobesa" class="payment-icon">
+                <a href="https://www.hostinger.com/ar/pagos" class="y-mas">y más</a>
+            </div>
+
+            <div class="footer-copyright767">
+                <div class="copyright-left767">
+                    © 2004-2025 Hostinger – Subí tu proyecto a internet, hacelo crecer y superá tus metas gracias al poder de la inteligencia artificial.
+                </div>
+                <div class="copyright-right767">
+                    Los precios se muestran sin IVA
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
